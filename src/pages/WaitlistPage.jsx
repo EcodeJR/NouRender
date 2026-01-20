@@ -12,13 +12,13 @@ const WaitlistPage = () => {
         <div className="px-4 lg:px-40 flex justify-center pt-32 pb-5">
           <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
             <div className="relative overflow-hidden rounded-2xl h-[500px] md:h-[600px] flex flex-col items-center justify-center text-center p-6 shadow-lg">
-              <div 
+              <div
                 className="absolute inset-0 z-0 bg-cover bg-center"
                 style={{
                   backgroundImage: 'linear-gradient(rgba(15, 15, 35, 0.7) 0%, rgba(15, 15, 35, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuATDRiTOLy310f4HQRP9ac67XaRLEWnfP-xuvFsnn-8g25lPipgHccaEwE2KS0WQUECEav9Xxm8XvFk3dGbH3cSl91Vx9p2iVt5I0gFdU7scurjUVRHkqvMv1cF-t3wVT8tbugcVhvQfe2YTPWJBmldT91baMJlPVFzsTc2w9CX5hmM4ki0kqEvLEPDLrHK5Ui-3VBP-FZKsroWlFI8aiis56YUdajByRuuSYVdsHHGVEzynuysOxmvzXZg9yYXHMMicXSUChOazg")'
                 }}
               />
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -27,12 +27,12 @@ const WaitlistPage = () => {
                 <h1 className="text-white dark:text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
                   The Future of Craft
                 </h1>
-                <p className="text-white dark:text-white/80 text-lg font-medium leading-relaxed max-w-[500px] mx-auto">
+                <p className="text-white/80 dark:text-white/80 text-lg font-medium leading-relaxed max-w-[500px] mx-auto">
                   Connecting master artisans with world-class opportunities. A premium, minimalist space for artisanry.
                 </p>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -40,17 +40,17 @@ const WaitlistPage = () => {
                 className="relative z-10 w-full max-w-[480px] mt-8"
               >
                 <div className="flex flex-col md:flex-row h-auto md:h-16 w-full items-stretch rounded-lg overflow-hidden border border-white/20 bg-white shadow-lg">
-                  <input 
+                  <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 px-6 text-slate-800 text-base outline-none placeholder:text-slate-800/40 py-4 md:py-0 bg-white" 
-                    placeholder="Enter your email address" 
+                    className="flex-1 px-6 text-primary text-base outline-none placeholder:text-primary/40 py-4 md:py-0 bg-white"
+                    placeholder="Enter your email address"
                   />
-                  <button className="bg-primary text-slate-800 px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
+                  <button className="bg-primary text-white px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
                     Join Waitlist
                   </button>
                 </div>
-                <p className="text-white/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
+                <p className="text-slate-900/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
               </motion.div>
             </div>
           </div>
@@ -68,14 +68,14 @@ const WaitlistPage = () => {
                   Our platform is built on three pillars of excellence, designed for those who value quality above all else.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   { icon: '✓', title: 'Vetted Excellence', desc: 'Rigorous standards for elite talent and uncompromising quality control in every project.' },
                   { icon: '⭐', title: 'Curated Projects', desc: 'High-impact commissions from world-class premium clients seeking authentic craft.' },
                   { icon: '🎯', title: 'Community Access', desc: 'Elevating the business of artisanry through meaningful connection and infrastructure.' }
                 ].map((item, i) => (
-                  <motion.div 
+                  <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ const WaitlistPage = () => {
         {/* CTA Section */}
         <section className="px-4 lg:px-40 flex justify-center py-20 bg-primary/5 dark:bg-midnight/20">
           <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -111,11 +111,11 @@ const WaitlistPage = () => {
                 Join our exclusive waitlist and be among the first to access NouRender when we launch.
               </p>
               <div className="flex flex-col md:flex-row h-auto md:h-16 w-full max-w-[480px] items-stretch rounded-lg overflow-hidden border border-primary/20 bg-white dark:bg-background-dark shadow-lg">
-                <input 
+                <input
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-6 text-primary dark:text-white text-base outline-none placeholder:text-primary/40 py-4 md:py-0 bg-white dark:bg-background-dark" 
-                  placeholder="your@email.com" 
+                  className="flex-1 px-6 text-primary dark:text-white text-base outline-none placeholder:text-primary/40 py-4 md:py-0 bg-white dark:bg-background-dark"
+                  placeholder="your@email.com"
                 />
                 <button className="bg-primary text-white px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
                   Get Early Access
