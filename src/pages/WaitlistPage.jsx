@@ -43,14 +43,14 @@ const WaitlistPage = () => {
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 px-6 text-primary text-base outline-none placeholder:text-primary/40 py-4 md:py-0 bg-white"
+                    className="flex-1 px-6 text-midnight text-base outline-none placeholder:text-midnight/40 py-4 md:py-0 bg-white"
                     placeholder="Enter your email address"
                   />
-                  <button className="bg-primary text-white px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
+                  <button className="bg-primary text-midnight px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
                     Join Waitlist
                   </button>
                 </div>
-                <p className="text-slate-900/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
+                <p className="text-white/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
               </motion.div>
             </div>
           </div>
