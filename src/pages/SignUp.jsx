@@ -31,11 +31,10 @@ const SignUp = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
                 onClick={() => setUserType('artisan')}
-                className={`group flex flex-col gap-6 rounded-xl border p-8 cursor-pointer shadow-sm transition-all ${
-                  userType === 'artisan'
-                    ? 'border-midnight dark:border-white bg-midnight/5 dark:bg-white/5'
-                    : 'border-midnight/10 dark:border-white/10 bg-white/40 dark:bg-midnight/20 hover:border-midnight/20'
-                }`}
+                className={`group flex flex-col gap-6 rounded-xl border p-8 cursor-pointer shadow-sm transition-all ${userType === 'artisan'
+                  ? 'border-midnight dark:border-white bg-midnight/5 dark:bg-white/5'
+                  : 'border-midnight/10 dark:border-white/10 bg-white/40 dark:bg-midnight/20 hover:border-midnight/20'
+                  }`}
               >
                 <div className="bg-midnight text-white size-14 rounded-lg flex items-center justify-center">
                   <Building2 size={28} />
@@ -52,11 +51,10 @@ const SignUp = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
                 onClick={() => setUserType('client')}
-                className={`group flex flex-col gap-6 rounded-xl border p-8 cursor-pointer shadow-sm transition-all ${
-                  userType === 'client'
-                    ? 'border-midnight dark:border-white bg-midnight/5 dark:bg-white/5'
-                    : 'border-midnight/10 dark:border-white/10 bg-white/40 dark:bg-midnight/20 hover:border-midnight/20'
-                }`}
+                className={`group flex flex-col gap-6 rounded-xl border p-8 cursor-pointer shadow-sm transition-all ${userType === 'client'
+                  ? 'border-midnight dark:border-white bg-midnight/5 dark:bg-white/5'
+                  : 'border-midnight/10 dark:border-white/10 bg-white/40 dark:bg-midnight/20 hover:border-midnight/20'
+                  }`}
               >
                 <div className="bg-midnight text-white size-14 rounded-lg flex items-center justify-center">
                   <Eye size={28} />
@@ -100,7 +98,7 @@ const SignUp = () => {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-primary dark:bg-white text-midnight dark:text-primary h-14 rounded-lg font-bold text-lg uppercase tracking-widest hover:opacity-90 transition-all"
+                  className="w-full bg-primary dark:bg-white text-midnight dark:text-midnight h-14 rounded-lg font-bold text-lg uppercase tracking-widest hover:opacity-90 transition-all"
                   type="button"
                 >
                   Get Started
@@ -111,11 +109,11 @@ const SignUp = () => {
               <div className="mt-8 text-center">
                 <p className="text-midnight/40 dark:text-white/40 text-xs">
                   By signing up, you agree to our{' '}
-                  <a href="#" className="underline hover:text-midnight/60">
+                  <a href="#" className="underline hover:text-midnight/60 dark:hover:text-white/60">
                     Terms of Service
                   </a>{' '}
                   and{' '}
-                  <a href="#" className="underline hover:text-midnight/60">
+                  <a href="#" className="underline hover:text-midnight/60 dark:hover:text-white/60">
                     Privacy Policy
                   </a>
                 </p>

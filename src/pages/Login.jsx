@@ -8,7 +8,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex h-screen w-full flex-col md:flex-row">
+    <div className="flex min-h-screen lg:h-[140vh] w-full flex-col md:flex-row">
       {/* Left Section: Hero Image */}
       <div className="hidden md:flex md:w-1/2 lg:w-3/5 h-full relative overflow-hidden bg-center bg-no-repeat bg-cover"
         style={{
@@ -32,7 +32,7 @@ const Login = () => {
       </div>
 
       {/* Right Section: Login Form */}
-      <div className="flex-1 flex flex-col justify-center items-center bg-white dark:bg-background-dark px-6 py-12 md:px-20">
+      <div className="h-fit flex-1 flex flex-col justify-center items-center bg-white dark:bg-background-dark px-6 py-12 md:px-20 lg:pt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -18,7 +18,7 @@ const ForClients = () => {
               >
                 <div className="flex flex-col gap-4">
                   <span className="uppercase tracking-widest text-xs font-bold text-primary/60 dark:text-primary/40">Premium Artisan Network</span>
-                  <h1 className="text-primary dark:text-white text-5xl md:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
+                  <h1 className="text-midnight dark:text-white text-5xl md:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
                     Precision Craftsmanship for Your Vision
                   </h1>
                   <p className="text-slate-600 dark:text-slate-300 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
@@ -89,7 +89,7 @@ const ForClients = () => {
           <div className="layout-content-container max-w-[1200px] flex-1">
             <div className="bg-primary/5 dark:bg-midnight/20 rounded-3xl px-8 md:px-16 py-20">
               <div className="max-w-3xl mx-auto mb-16">
-                <h2 className="text-primary dark:text-white text-3xl md:text-4xl font-black tracking-[-0.02em] text-center mb-4">
+                <h2 className="text-midnight dark:text-white text-3xl md:text-4xl font-black tracking-[-0.02em] text-center mb-4">
                   The NouRender Standard
                 </h2>
                 <p className="text-slate-600 dark:text-slate-300 text-center font-medium italic">
@@ -133,7 +133,7 @@ const ForClients = () => {
         <section className="px-4 lg:px-40 flex justify-center py-20">
           <div className="layout-content-container max-w-[1200px] flex-1">
             <div className="text-center mb-16">
-              <h2 className="text-primary dark:text-white text-3xl md:text-4xl font-black tracking-[-0.02em] mb-4">
+              <h2 className="text-midnight dark:text-white text-3xl md:text-4xl font-black tracking-[-0.02em] mb-4">
                 Why Choose NouRender
               </h2>
               <p className="text-slate-600 dark:text-slate-300 text-lg max-w-[600px] mx-auto">
@@ -173,7 +173,7 @@ const ForClients = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <h2 className="text-primary dark:text-white text-4xl md:text-5xl font-black mb-6">
+              <h2 className="text-midnight dark:text-white text-4xl md:text-5xl font-black mb-6">
                 Ready to Commission Excellence?
               </h2>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-[600px] mx-auto">

@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { CheckCircle, Handshake, Lightbulb, ChevronDown } from 'lucide-react';
 
 const AboutPage = () => {
   const containerVariants = {
@@ -20,34 +21,34 @@ const AboutPage = () => {
 
   const philosophyCards = [
     {
-      icon: 'verified',
+      icon: CheckCircle,
       title: 'Quality',
       description: 'We curate only the finest artisans who demonstrate complete mastery in their respective fields, from ceramics to software.',
     },
     {
-      icon: 'handshake',
+      icon: Handshake,
       title: 'Integrity',
       description: 'Transparent processes and fair compensation are at the heart of our platform. We value the maker as much as the object.',
     },
     {
-      icon: 'hub',
+      icon: Lightbulb,
       title: 'Connection',
       description: 'Bridging the gap between the maker and the collector through storytelling, immersive visuals, and direct interaction.',
     },
   ];
 
   const galleryImages = [
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuC-cK9Cz-aoKiPVw7j447biJqM_zEd1R0E1ix_9VsXmdM417OdZnY-7srhCvYWg-FI92BoFHJpKzSB6NQhnk83iZsAqBqXpyLRSG2rKFZ7ClHUL85wK4RxwMroUiixZ4rtBaqNaUbFOOXBE139JtsleZcQYLbxv3DI3kU7L86GJGWLx-XhPhK7i8nZ1V7Na761GMsYv6gS_rS84Y8YvjeUyKOF',
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuASbE7fxeqt7k4lZsxvyZS4GG9O1ZrzugjSfc1cROQDITA27fElS9TE92AVHZmmQ3a1lzuPv3lIKtrR9MTE_TSgWulNIzZr1c8TddZXJPjR2ozGmCnY_kjJD7wJzMVuIHVoB1ps1kr3wFy26JCOTyq0XlWFlmvfNkK9HLHUNIxLi7ioBvXdsMp3u2ntSg7S0gLPtye_YlVsJB2mTwo9oj1Klr',
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuA18hfX2-DDxJVFVBacLWC5u60ig7uJ0DYrVkwOAcJs-OBbUbolvsskHPfVrjRhxyXe0cokyksh16_M2Utftt6YVa3EpSorM8EDB8Ubqy3ixw-uHBwi6Y2BexhAwZcWXFZyapQ7l2_1GwbW5rJk5KADRxz6BErbku19xUWyNAx3vtR8aIxOkLj-eZY5o--MroYl5NhZRZ8N6pQQx6O5DNf2goV',
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuAne0RmM9Isveu5WqxBSD9NNL7QI603DVMxITErF5OUffxVVXWTdOSm9rQEUHMtl7q1J8WAHp2s_qdsASirWbyCGbCadCFNw1ib2xdocOxCxl5GUDZFF0hO7VK11wvXrdfQZ_wc7huhoZVWfHqLpFrQy-DJFyiIA98QC6dccu1EjR-cXrGGytzrKmmnbXJpvWqKUajiBYqoRM7DI-Af8vs2FTAzz_yqFQTG2',
+    'https://images.unsplash.com/photo-1626784579980-db39c1a13aa9?q=80&w=696&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1652829069629-959f8927f608?q=80&w=661&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://plus.unsplash.com/premium_photo-1687697860916-b05b982decbc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://plus.unsplash.com/premium_photo-1676486611572-bf887dc2785b?q=80&w=679&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   ];
 
   return (
     <main className="min-h-screen bg-white dark:bg-background-dark">
       {/* Hero Section */}
       <section className="relative px-6 lg:px-40 py-24 lg:py-40 bg-white dark:bg-background-dark">
-        <div className="max-w-[1200px] mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto my-10 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,7 +72,7 @@ const AboutPage = () => {
             className="mt-12 flex justify-center"
           >
             <button className="flex items-center gap-2 text-primary dark:text-white font-bold border-b-2 border-primary pb-1 hover:gap-4 transition-all">
-              Discover our story <span className="material-symbols-outlined">arrow_downward</span>
+              Discover our story <ChevronDown size={18} />
             </button>
           </motion.div>
         </div>
@@ -89,8 +90,9 @@ const AboutPage = () => {
             <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
             <img
               alt="Extreme close-up of a woodworker's hands using a chisel"
-              className="w-full h-full object-cover grayscale contrast-125"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVlxxHv0h7KRZWwD5ORlCHJOpt2PG3TLR01nGgfQ8D2FlqvN4KzuFRfMn8aRKZP_HCKz_9mcZAuP42ASLDrE4vZtc8K4yRoQST4cBnT79nltXhhR27NtfSOYOoQgpkxlOxBU9J6cqJItClFfF31CiPD2ZYxfrcxcRVWUAphpJYUy1mZqh3-0IW4NvxoPihypvpDcRmWCKUsoDelyRpwk4P07u7Q6oEsQ9oGlHeIgPbNY-gvAREd59hBjaApLfL88KPXxuWsiFWw"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition ease-in-out contrast-125"
+              src="https://images.unsplash.com/photo-1661446569716-86e93bf267d3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              onError={(e) => { e.target.src = 'https://via.placeholder.com/500x500?text=Woodworker'; }}
             />
           </motion.div>
           <motion.div
@@ -130,20 +132,23 @@ const AboutPage = () => {
             <p className="text-slate-700 dark:text-slate-300 max-w-xl mx-auto">Our approach is rooted in the preservation of human touch and the pursuit of excellence across every medium.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {philosophyCards.map((card, i) => (
-              <motion.div
-                key={i}
-                variants={itemVariants}
-                initial="hidden"
-                whileInView="visible"
-                custom={i}
-                className="p-10 bg-slate-50 dark:bg-midnight rounded-xl border border-slate-200 dark:border-white/10 transition-transform hover:-translate-y-2"
-              >
-                <span className="material-symbols-outlined text-4xl mb-6 text-primary dark:text-primary">{card.icon}</span>
-                <h3 className="text-xl font-bold mb-3 text-midnight dark:text-white">{card.title}</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{card.description}</p>
-              </motion.div>
-            ))}
+            {philosophyCards.map((card, i) => {
+              const IconComponent = card.icon;
+              return (
+                <motion.div
+                  key={i}
+                  variants={itemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  custom={i}
+                  className="p-10 bg-slate-50 dark:bg-midnight rounded-xl border border-slate-200 dark:border-white/10 transition-transform hover:-translate-y-2"
+                >
+                  <IconComponent size={40} className="mb-6 text-primary dark:text-primary" />
+                  <h3 className="text-xl font-bold mb-3 text-midnight dark:text-white">{card.title}</h3>
+                  <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{card.description}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -179,8 +184,8 @@ const AboutPage = () => {
               >
                 <img
                   alt={`Gallery image ${i + 1}`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src={`https://images.unsplash.com/photo-${['1578500494', '1599922746', '1572365992', '1536882240'][i]}-${['c9e7e6d4', 'a2e93c8f', '8b9d5c3e', 'f1e9d8c2'][i]}?w=400&h=500&fit=crop`}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                  src={img}
                   onError={(e) => { e.target.src = `https://via.placeholder.com/400x500?text=Gallery+${i + 1}`; }}
                 />
               </motion.div>

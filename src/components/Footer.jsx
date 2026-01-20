@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Globe, Camera } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,10 +17,10 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             <a className="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center hover:bg-primary hover:text-midnight transition-colors text-slate-900 dark:text-white" href="#">
-              <span className="material-icons text-lg">public</span>
+              <Globe size={18} />
             </a>
             <a className="w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center hover:bg-primary hover:text-midnight transition-colors text-slate-900 dark:text-white" href="#">
-              <span className="material-icons text-lg">camera_alt</span>
+              <Camera size={18} />
             </a>
           </div>
         </div>
@@ -57,9 +58,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
         <p>© 2024 NouRender Platform. All rights reserved.</p>
         <div className="flex gap-8">
-          <a className="hover:text-white" href="#">Twitter</a>
-          <a className="hover:text-white" href="#">LinkedIn</a>
-          <a className="hover:text-white" href="#">Behance</a>
+          <a className="hover:text-midnight dark:hover:text-white" href="#">Twitter</a>
+          <a className="hover:text-midnight dark:hover:text-white" href="#">LinkedIn</a>
+          <a className="hover:text-midnight dark:hover:text-white" href="#">Behance</a>
         </div>
       </div>
     </footer>

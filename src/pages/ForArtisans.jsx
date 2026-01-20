@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Gem, Zap, Users, BarChart3, Quote } from 'lucide-react';
+import { Gem, Zap, Users, BarChart3, Quote, ArrowRight } from 'lucide-react';
 
 const ForArtisans = () => {
   return (
@@ -22,7 +22,7 @@ const ForArtisans = () => {
                   <span className="text-xs font-bold uppercase tracking-wider text-primary dark:text-primary">Now Accepting Applications</span>
                 </div>
 
-                <h1 className="font-display text-5xl lg:text-7xl font-black leading-[1.1] tracking-[-0.033em] text-primary dark:text-white">
+                <h1 className="font-display text-5xl lg:text-7xl font-black leading-[1.1] tracking-[-0.033em] text-midnight dark:text-white">
                   Where Elite <br />
                   <span className="italic text-primary">Artisans</span> Meet <br />
                   Masterpieces.
@@ -39,7 +39,7 @@ const ForArtisans = () => {
                     className="bg-midnight dark:bg-primary text-white dark:text-midnight px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-primary/20 transition-all flex items-center gap-2 group"
                   >
                     Apply as an Artisan
-                    <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                   </motion.button>
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
@@ -84,7 +84,7 @@ const ForArtisans = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="px-4 lg:px-40 flex justify-center py-12 bg-primary/5 dark:bg-midnight/20 border-y border-primary/10">
+        <section className="px-4 lg:px-40 flex justify-center py-12 bg-white dark:bg-midnight border-y border-slate-100 dark:border-white/5">
           <div className="layout-content-container max-w-[1200px] flex-1">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
@@ -101,7 +101,7 @@ const ForArtisans = () => {
                   className="text-center md:text-left"
                 >
                   <div className="text-4xl font-display font-black text-primary dark:text-white mb-1">{stat.number}</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300 uppercase tracking-widest font-bold">{stat.label}</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400 uppercase tracking-widest font-bold">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -109,16 +109,12 @@ const ForArtisans = () => {
         </section>
 
         {/* Features Section */}
-        <section className="px-4 lg:px-40 flex justify-center py-24">
+        <section className="px-4 lg:px-40 flex justify-center py-24 bg-slate-50 dark:bg-zinc-950/50">
           <div className="layout-content-container max-w-[1200px] flex-1">
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="flex flex-col lg:flex-row gap-16 items-start">
               {/* Left: Sticky Image */}
-              <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                className="lg:sticky lg:top-32"
-              >
-                <h2 className="font-display text-4xl lg:text-5xl font-bold mb-6 text-primary dark:text-white">
+              <div className="lg:sticky lg:top-32 lg:w-1/2">
+                <h2 className="font-display text-4xl lg:text-5xl font-bold mb-6 text-midnight dark:text-white">
                   Elevate Your Practice to a Global Stage.
                 </h2>
                 <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 leading-relaxed">
@@ -132,10 +128,10 @@ const ForArtisans = () => {
                   />
                   <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Right: Feature Cards */}
-              <div className="space-y-6">
+              <div className="lg:w-1/2 space-y-6">
                 {[
                   { 
                     icon: Gem, 
@@ -160,20 +156,16 @@ const ForArtisans = () => {
                 ].map((feature, i) => {
                   const IconComponent = feature.icon;
                   return (
-                    <motion.div
+                    <div
                       key={i}
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      whileHover={{ y: -5 }}
-                      transition={{ delay: i * 0.1, duration: 0.3 }}
-                      className="bg-white dark:bg-midnight p-8 rounded-[2.5rem] border border-primary/10 dark:border-white/5 hover:border-primary/30 dark:hover:border-primary/30 transition-all group shadow-sm hover:shadow-md"
+                      className="bg-white dark:bg-midnight p-8 rounded-[2.5rem] border border-slate-100 dark:border-white/5 hover:border-primary/30 transition-colors group"
                     >
                       <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-midnight">
                         <IconComponent size={24} />
                       </div>
-                      <h3 className="text-2xl font-display font-bold mb-3 text-primary dark:text-white">{feature.title}</h3>
-                      <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{feature.desc}</p>
-                    </motion.div>
+                      <h3 className="text-2xl font-display font-bold mb-3 text-midnight dark:text-white">{feature.title}</h3>
+                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{feature.desc}</p>
+                    </div>
                   );
                 })}
               </div>
@@ -184,7 +176,7 @@ const ForArtisans = () => {
         {/* Testimonial Section */}
         <section className="px-4 lg:px-40 flex justify-center py-20">
           <div className="layout-content-container max-w-[1200px] flex-1">
-            <div className="bg-white dark:bg-midnight rounded-[3rem] p-12 lg:p-24 relative overflow-hidden">
+            <div className="bg-gray-200/70 dark:bg-midnight rounded-[3rem] p-12 lg:p-24 relative overflow-hidden">
               <div className="relative z-10 max-w-3xl">
                 <div className="text-primary text-6xl mb-8 inline-block">
                   <Quote size={48} fill="currentColor" />
@@ -196,7 +188,7 @@ const ForArtisans = () => {
                   <img alt="Creative Director" className="w-16 h-16 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVsZIuWtNOrFkxm9VjKCKzf8c8DamTlKG--OD8dPY8palLXO1MSHEnwk9JPYG2M5kI0cvp1N4LBQqePGAATT3yFGsNXOibVsOSsAan31MdC5X7FLms1z7cJjAxAPFjV6iVzbn9aIPCIKv2bCMtBfPdIgarnQX6DXUO0qfk_fSGe-gdGTuYdCUaNmn3PFfiDePYOoev5bKXV6YZZjnMCifebrGLjDWC-1jWwiwHuQYyp4u1lowE3EICC7GTw4m1wLhpX9SrOs4PIg" />
                   <div>
                     <p className="text-slate-900 dark:text-white font-bold text-lg">Julian Voss</p>
-                    <p className="text-primary/70 text-sm uppercase tracking-widest font-bold">Creative Director at ELITE</p>
+                    <p className="text-gray-400 dark:text-primary/70 text-sm uppercase tracking-widest font-bold">Creative Director at ELITE</p>
                   </div>
                 </div>
               </div>
@@ -210,7 +202,7 @@ const ForArtisans = () => {
         <section className="px-4 lg:px-40 flex justify-center py-24">
           <div className="layout-content-container max-w-[1200px] flex-1">
             <div className="mb-16">
-              <h2 className="font-display text-4xl font-bold mb-4 text-primary dark:text-white">Mastery Across Disciplines</h2>
+              <h2 className="font-display text-4xl font-bold mb-4 text-midnight dark:text-white">Mastery Across Disciplines</h2>
               <p className="text-slate-600 dark:text-slate-300 max-w-xl">We are looking for experts in specialized fields to fill our current project pipeline.</p>
             </div>
 
@@ -246,7 +238,7 @@ const ForArtisans = () => {
         {/* CTA Section */}
         <section className="px-4 lg:px-40 flex justify-center py-20 bg-primary">
           <div className="layout-content-container max-w-[1200px] flex-1">
-            <div className="bg-primary/10 dark:bg-midnight p-8 md:p-16 rounded-[4rem] text-center relative overflow-hidden">
+            <div className="bg-white dark:bg-midnight p-8 md:p-16 rounded-[4rem] text-center relative overflow-hidden">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

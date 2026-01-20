@@ -23,8 +23,8 @@ const Home = () => {
                   CURATED ARTISAN NETWORK
                 </div>
                 <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8">
-                  Empowering Brands <br/>
-                  <span className="text-blue-600 dark:text-blue-400 italic font-serif font-medium">Through Creative</span> <br/>
+                  Empowering Brands <br />
+                  <span className="text-blue-600 dark:text-blue-400 italic font-serif font-medium">Through Creative</span> <br />
                   Solutions
                 </h1>
                 <p className="text-lg text-slate-600 dark:text-slate-400 max-w-md mb-10 leading-relaxed">
@@ -47,10 +47,10 @@ const Home = () => {
                 className="relative"
               >
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl rotate-3 translate-x-4 group">
-                  <img 
-                    alt="Professional Artisan" 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj0JkhjBpgJdFX1bwUsi6biCw4S8d4OqThcqSUdYesD0ksvTGpoWsqNV1x2eKP9YM-f2xQiA-jiCPdlqFl6R-cRJsguJumfk6JlIF400MoF17gsMWDVCuyp0IYjLrM0bZ-Puj15jLUNwq0QTN7u9IdXxNKANUgakpEBMBe-SR24HZ36cQsgPtxbcewSIRpEdFBXIn54_5-cyDlpMcu9iDAvFLdjVvZZbI5PCAJq8o7ZmWuoauJnDXR9j-QUpUHU16Sq_nANPARLg" 
+                  <img
+                    alt="Professional Artisan"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj0JkhjBpgJdFX1bwUsi6biCw4S8d4OqThcqSUdYesD0ksvTGpoWsqNV1x2eKP9YM-f2xQiA-jiCPdlqFl6R-cRJsguJumfk6JlIF400MoF17gsMWDVCuyp0IYjLrM0bZ-Puj15jLUNwq0QTN7u9IdXxNKANUgakpEBMBe-SR24HZ36cQsgPtxbcewSIRpEdFBXIn54_5-cyDlpMcu9iDAvFLdjVvZZbI5PCAJq8o7ZmWuoauJnDXR9j-QUpUHU16Sq_nANPARLg"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-white/5 -rotate-3">
@@ -107,7 +107,7 @@ const Home = () => {
             className="grid lg:grid-cols-2 gap-20 items-end mb-20"
           >
             <h2 className="text-5xl font-extrabold leading-tight">
-              Turning Ideas Into <br/>
+              Turning Ideas Into <br />
               <span className="text-blue-600 dark:text-blue-400 italic font-serif font-medium">Masterpieces</span>
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-lg max-w-md">
@@ -121,11 +121,11 @@ const Home = () => {
               viewport={{ once: true }}
               className="md:col-span-8 group relative overflow-hidden rounded-3xl h-[500px]"
             >
-              <img 
-                alt="Team Collaboration" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39U0okVv5lIDoUgBnPuQwuz4FfngtdgBAZaS9cX7H57ObVqhI_tHhMy3zJ_Ud5BoiG_q7AC3WCQZDT_TQqApmr6_kF5HBp04YT426tvY6rFz8S9QskADrEOXbaeqhjBQPonqinq9QlfufZh1R5_mscfdiXpQtfnCAiimLXnYSlJ1H61DBcUASeXyBoUQG1KauJXPyr7Y7LmjOlvyGPnJRxOssKToXrDjyz453I1pYeUuGBgOGaYVPCJrluHCLL5o3KtkeXInZRQ" 
-                />
+              <img
+                alt="Team Collaboration"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39U0okVv5lIDoUgBnPuQwuz4FfngtdgBAZaS9cX7H57ObVqhI_tHhMy3zJ_Ud5BoiG_q7AC3WCQZDT_TQqApmr6_kF5HBp04YT426tvY6rFz8S9QskADrEOXbaeqhjBQPonqinq9QlfufZh1R5_mscfdiXpQtfnCAiimLXnYSlJ1H61DBcUASeXyBoUQG1KauJXPyr7Y7LmjOlvyGPnJRxOssKToXrDjyz453I1pYeUuGBgOGaYVPCJrluHCLL5o3KtkeXInZRQ"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-10">
                 <span className="bg-blue-600 text-white px-4 py-1.5 rounded-full text-xs font-bold w-fit mb-4">CREATIVE AGENCY</span>
                 <h4 className="text-2xl font-bold text-slate-900 dark:text-white">Strategic Design Planning</h4>
@@ -138,11 +138,11 @@ const Home = () => {
               transition={{ delay: 0.1 }}
               className="md:col-span-4 group relative overflow-hidden rounded-3xl h-[500px]"
             >
-              <img 
-                alt="Office Space" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvE4nGHnoG6ImHpGU7MJaBsLgmq0AKPU5Eg2W5QXXaJLtKFAQ_kv_5etbZ1c-R17dboQ1PIBsmkrUUynmNhPHiMG5OqJwA-x1Jz7AsJCVHND_VQmGq7erWa_ZRBqw-WqPR5wjMe5xB40BbB8RDI5g2K0IshGCm3_V1L9-8jMc6pAXU4kXFPXm4gDWGdDeeYWG1xKIjTGkGo3kkyuI-unn6VhXKM33F0FFil6uyjv_ZRsZHCkGTRiBONc5cfUYQrWqq7U6bTOq6Kw" 
-                />
+              <img
+                alt="Office Space"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvE4nGHnoG6ImHpGU7MJaBsLgmq0AKPU5Eg2W5QXXaJLtKFAQ_kv_5etbZ1c-R17dboQ1PIBsmkrUUynmNhPHiMG5OqJwA-x1Jz7AsJCVHND_VQmGq7erWa_ZRBqw-WqPR5wjMe5xB40BbB8RDI5g2K0IshGCm3_V1L9-8jMc6pAXU4kXFPXm4gDWGdDeeYWG1xKIjTGkGo3kkyuI-unn6VhXKM33F0FFil6uyjv_ZRsZHCkGTRiBONc5cfUYQrWqq7U6bTOq6Kw"
+              />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <button className="bg-white text-slate-900 p-4 rounded-full shadow-xl">
                   ▶
@@ -204,11 +204,11 @@ const Home = () => {
               viewport={{ once: true }}
               className="lg:col-span-1 bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-xl border border-slate-200 dark:border-white/5"
             >
-              <img 
-                alt="Process detail" 
-                className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlGlzzqVwNiXdhZ3JQ4vCyO7-7LhAL_A1Q7oSm_Csog1BDhFW8aTceV8aPTqtTpYf8No4UqvfosiVk7a_dVU-ET9dbVYGO-WHKvyS4DfNCN6guwyHO6rWR7bijdfbeUgT0qrGNkZkKh1nS5W3F6l7ic4Vvj5HoIaa9-8zuYH5qS2gIiij_c9vNzkUlK6bpbiGaJoFMRtyjg8ybQ_vojcG9IybA234V_8iVAKrcTVRbtpW10Ch25M3yk-LmusJjDFjUkFEx7INTuA" 
-                />
+              <img
+                alt="Process detail"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlGlzzqVwNiXdhZ3JQ4vCyO7-7LhAL_A1Q7oSm_Csog1BDhFW8aTceV8aPTqtTpYf8No4UqvfosiVk7a_dVU-ET9dbVYGO-WHKvyS4DfNCN6guwyHO6rWR7bijdfbeUgT0qrGNkZkKh1nS5W3F6l7ic4Vvj5HoIaa9-8zuYH5qS2gIiij_c9vNzkUlK6bpbiGaJoFMRtyjg8ybQ_vojcG9IybA234V_8iVAKrcTVRbtpW10Ch25M3yk-LmusJjDFjUkFEx7INTuA"
+              />
             </motion.div>
 
             {/* Right Side Info */}
@@ -233,7 +233,7 @@ const Home = () => {
                 className="p-8 rounded-3xl bg-blue-600 text-white flex flex-col justify-between h-56"
               >
                 <h4 className="text-xl font-bold">Looking for design experts who can bring your vision to life?</h4>
-                <Link to="/artisans" className="bg-white text-blue-600 w-fit px-6 py-3 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform">
+                <Link to="/for-artisans" className="bg-white text-blue-600 w-fit px-6 py-3 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform">
                   Meet our expert <span>↗</span>
                 </Link>
               </motion.div>
@@ -349,12 +349,12 @@ const Home = () => {
             <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-8">
-                  Get in Touch <br/>
+                  Get in Touch <br />
                   <span className="text-blue-400 italic font-serif font-medium">Today!</span>
                 </h2>
                 <div className="space-y-4 mb-10">
-                  <input className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" type="text"/>
-                  <input className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address" type="email"/>
+                  <input className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" type="text" />
+                  <input className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address" type="email" />
                   <button className="bg-blue-600 text-white w-full py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition-colors">Submit Request</button>
                 </div>
               </div>

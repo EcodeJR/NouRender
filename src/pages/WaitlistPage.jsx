@@ -24,10 +24,10 @@ const WaitlistPage = () => {
                 viewport={{ once: true }}
                 className="relative z-10 max-w-[700px] flex flex-col gap-4"
               >
-                <h1 className="text-slate-900 dark:text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                <h1 className="text-white dark:text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
                   The Future of Craft
                 </h1>
-                <p className="text-slate-900/80 dark:text-white/80 text-lg font-medium leading-relaxed max-w-[500px] mx-auto">
+                <p className="text-white dark:text-white/80 text-lg font-medium leading-relaxed max-w-[500px] mx-auto">
                   Connecting master artisans with world-class opportunities. A premium, minimalist space for artisanry.
                 </p>
               </motion.div>
@@ -43,14 +43,14 @@ const WaitlistPage = () => {
                   <input 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 px-6 text-primary text-base outline-none placeholder:text-primary/40 py-4 md:py-0 bg-white" 
+                    className="flex-1 px-6 text-slate-800 text-base outline-none placeholder:text-slate-800/40 py-4 md:py-0 bg-white" 
                     placeholder="Enter your email address" 
                   />
-                  <button className="bg-primary text-white px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
+                  <button className="bg-primary text-slate-800 px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
                     Join Waitlist
                   </button>
                 </div>
-                <p className="text-slate-900/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
+                <p className="text-white/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
               </motion.div>
             </div>
           </div>

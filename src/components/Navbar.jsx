@@ -44,7 +44,8 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
         </div>
 
         {/* Action Button & Mobile Menu */}
-        <div className="flex items-center gap-4"><button
+        <div className="flex items-center gap-4">
+          <button
             onClick={toggleDarkMode}
             className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors p-1"
             aria-label="Toggle dark mode"
@@ -86,7 +87,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
                   {link.name}
                 </Link>
               ))}
-              <button
+              {/* <button
                 onClick={() => {
                   toggleDarkMode();
                   setIsOpen(false);
@@ -95,7 +96,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
               >
                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
                 {isDark ? 'Light Mode' : 'Dark Mode'}
-              </button>
+              </button> */}
               <Link 
                 to="/login"
                 onClick={() => setIsOpen(false)}
