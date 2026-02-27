@@ -14,6 +14,7 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
     { name: 'For Artisans', path: '/for-artisans' },
     { name: 'For Clients', path: '/for-clients' },
     { name: 'How It Works', path: '/how-it-works' },
+    { name: 'Stories', path: '/stories' },
     { name: 'Join Waitlist', path: '/waitlist' },
   ];
 
@@ -34,9 +35,8 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
             <Link
               key={link.path}
               to={link.path}
-              className={`hover:text-primary transition-colors ${
-                location.pathname === link.path ? 'text-primary' : ''
-              }`}
+              className={`hover:text-primary transition-colors ${location.pathname === link.path ? 'text-primary' : ''
+                }`}
             >
               {link.name}
             </Link>
@@ -58,9 +58,9 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
           <Link to="/signup" className="bg-primary text-midnight px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform">
             Sign up
           </Link>
-          
-          <button 
-            className="md:hidden text-midnight dark:text-white p-1" 
+
+          <button
+            className="md:hidden text-midnight dark:text-white p-1"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -97,14 +97,14 @@ const Navbar = ({ isDark, toggleDarkMode }) => {
                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
                 {isDark ? 'Light Mode' : 'Dark Mode'}
               </button> */}
-              <Link 
+              <Link
                 to="/login"
                 onClick={() => setIsOpen(false)}
                 className="text-slate-600 dark:text-slate-300 font-medium transition-colors hover:text-primary"
               >
                 Log in
               </Link>
-              <Link 
+              <Link
                 to="/signup"
                 onClick={() => setIsOpen(false)}
                 className="bg-primary text-midnight px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform w-full text-center"

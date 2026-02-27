@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Star } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slopes font-display transition-colors duration-300">
+    <main className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slopes font-display transition-colors duration-300">
       {/* Header */}
       <header className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 hero-gradient -z-10"></div>
@@ -258,6 +258,35 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Impact Story Teaser */}
+      <section className="py-24 bg-white dark:bg-slate-900 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-primary/5 dark:bg-white/5 rounded-[3rem] p-8 lg:p-16 border border-primary/20 flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary text-midnight rounded-md text-[10px] font-black tracking-widest uppercase">REAL IMPACT</div>
+              <h2 className="text-4xl lg:text-5xl font-black text-midnight dark:text-white leading-tight">
+                From Chaos into <span className="italic">Calm.</span>
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-slate-400">
+                "By dawn, her home was dry, her child asleep, and she breathed for the first time that night." See how we're changing lives in Abuja, one match at a time.
+              </p>
+              <Link to="/stories" className="inline-flex items-center gap-2 font-black text-midnight dark:text-primary group">
+                Read our stories <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
+              </Link>
+            </div>
+            <div className="lg:w-1/2 relative">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl rotate-2">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Impact story teaser" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-100 dark:border-white/5 -rotate-2">
+              <p className="font-black text-sm text-midnight dark:text-white">"Best decision for my home."</p>
+              <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mt-1">Vetted Client, Abuja</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Artisans Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -375,7 +404,7 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

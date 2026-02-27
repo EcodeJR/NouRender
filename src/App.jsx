@@ -14,6 +14,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import WaitlistPage from './pages/WaitlistPage'
 import Vision from './pages/Vision';
+import ImpactPage from './pages/ImpactPage';
 
 const App = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/waitlist" element={<WaitlistPage />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/vision" element={<Vision />} />
+            <Route path="/stories" element={<ImpactPage />} />
           </Routes>
         </main>
         <Footer />

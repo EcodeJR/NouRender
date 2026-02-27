@@ -28,7 +28,8 @@ const Footer = () => {
         <div>
           <h6 className="font-bold mb-6 text-sm uppercase tracking-widest text-slate-600 dark:text-slate-500">Platform</h6>
           <ul className="space-y-4 text-slate-600 dark:text-slate-400">
-            <li><a className="hover:text-primary" href="#">How it works</a></li>
+            <li><Link className="hover:text-primary" to="/how-it-works">How it works</Link></li>
+            <li><Link className="hover:text-primary" to="/stories">Impact Stories</Link></li>
             <li><a className="hover:text-primary" href="#">Safety</a></li>
             <li><a className="hover:text-primary" href="#">Pricing</a></li>
             <li><a className="hover:text-primary" href="#">Curator Team</a></li>
