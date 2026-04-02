@@ -4,6 +4,53 @@ import { Link } from 'react-router-dom';
 
 const WaitlistPage = () => {
   const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState(''); // 'success' or 'error'
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validation
+    if (!email.trim()) {
+      setMessageType('error');
+      setMessage('Please enter your email address');
+      return;
+    }
+
+    setLoading(true);
+    setMessage('');
+
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessageType('success');
+        setMessage('🎉 Great! You\'ve been added to our waitlist!');
+        setEmail('');
+      } else if (response.status === 409) {
+        setMessageType('error');
+        setMessage('📧 This email is already on our waitlist. See you soon!');
+      } else {
+        setMessageType('error');
+        setMessage(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setMessageType('error');
+      setMessage('Failed to connect to the server. Please check your connection and try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden bg-white dark:bg-background-dark">
@@ -43,13 +90,30 @@ const WaitlistPage = () => {
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && handleSubmit(e)}
                     className="flex-1 px-6 text-midnight text-base outline-none placeholder:text-midnight/40 py-4 md:py-0 bg-white"
                     placeholder="Enter your email address"
+                    disabled={loading}
                   />
-                  <button className="bg-primary text-midnight px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0">
-                    Join Waitlist
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="bg-primary text-midnight px-8 font-bold text-base hover:bg-primary/90 transition-colors py-4 md:py-0 disabled:opacity-70 disabled:cursor-not-allowed"
+                  >
+                    {loading ? 'Joining...' : 'Join Waitlist'}
                   </button>
                 </div>
+                {message && (
+                  <motion.p
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`text-sm mt-3 font-medium ${
+                      messageType === 'success' ? 'text-green-400' : 'text-red-400'
+                    }`}
+                  >
+                    {message}
+                  </motion.p>
+                )}
                 <p className="text-white/70 dark:text-white/70 text-xs mt-3 font-medium uppercase tracking-widest">Be among the first to experience the new standard.</p>
               </motion.div>
             </div>

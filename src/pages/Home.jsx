@@ -1,5 +1,5 @@
-
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Star, ArrowRight } from 'lucide-react';
@@ -357,6 +357,51 @@ const Home = () => {
                     <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-tighter">{artisan.projects} Active Projects</span>
                   </div>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Survey Section */}
+      <section className="py-24 bg-primary/5 dark:bg-midnight/20">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary text-midnight rounded-md text-[10px] font-black tracking-widest uppercase mb-4">HELP SHAPE OUR FUTURE</div>
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-midnight dark:text-white mb-6">We Value Your Opinion</h2>
+            <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+              Your feedback directly influences how we build NouRender. Take just 3-5 minutes to share your thoughts and help us create the perfect platform for artisans and clients.
+            </p>
+            <Link 
+              to="/survey" 
+              className="inline-flex items-center gap-2 bg-primary text-white px-10 py-4 rounded-full font-bold text-base shadow-lg shadow-primary/30 hover:bg-primary/90 hover:translate-y-[-2px] transition-all group"
+            >
+              Take Survey Now <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { icon: '✓', title: 'Quick & Easy', desc: 'Only 3-5 minutes of your time' },
+              { icon: '💡', title: 'Your Ideas Count', desc: 'Direct input on features we build' },
+              { icon: '🎯', title: 'Shape the Future', desc: 'Be part of our innovation journey' }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-all"
+              >
+                <div className="text-3xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-midnight dark:text-white mb-2">{item.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400">{item.desc}</p>
               </motion.div>
             ))}
           </div>

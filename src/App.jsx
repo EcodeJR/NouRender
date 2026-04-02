@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './index.css'
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ import HowItWorks from './pages/HowItWorks'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import WaitlistPage from './pages/WaitlistPage'
+import SurveyPage from './pages/SurveyPage'
 import Vision from './pages/Vision';
 import ImpactPage from './pages/ImpactPage';
 
@@ -48,6 +50,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/waitlist" element={<WaitlistPage />} />
+            <Route path="/survey" element={<SurveyPage />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/vision" element={<Vision />} />
             <Route path="/stories" element={<ImpactPage />} />

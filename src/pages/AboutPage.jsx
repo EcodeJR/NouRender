@@ -1,40 +1,16 @@
 
-import React from 'react';
+/* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
-  CheckCircle,
   Handshake,
-  Lightbulb,
-  ChevronDown,
-  Wrench,
-  Zap,
-  Hammer,
-  Scissors,
-  ShieldCheck,
-  Users,
   Banknote,
   Target,
-  Eye,
-  ArrowRight,
-  MapPin,
-  Briefcase,
-  UserPlus,
-  Mail
+  ShieldCheck,
+  Users,
 } from 'lucide-react';
 
 const AboutPage = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        duration: 0.6
-      }
-    },
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
