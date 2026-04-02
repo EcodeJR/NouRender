@@ -3,9 +3,16 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "framework": "vite",
+  "env": [
+    "VITE_API_URL"
+  ],
   "rewrites": [
     {
-      "source": "/((?!api).*)$",
+      "source": "/api/:path*",
+      "destination": "${VITE_API_URL}/api/:path*"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
