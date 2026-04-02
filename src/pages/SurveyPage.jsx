@@ -4,7 +4,7 @@ import { CheckCircle, MessageSquare, Zap } from 'lucide-react';
 
 const SurveyPage = () => {
   // TODO: Add your survey form link here
-  const SURVEY_FORM_URL = 'https://forms.example.com/survey'; // Replace with actual survey link
+  const SURVEY_FORM_URL = 'https://form.svhrt.com/694b73f8ee61c0f2f2e7848d'; // Replace with actual survey link
 
   const handleTakeSurvey = () => {
     if (SURVEY_FORM_URL === 'https://forms.example.com/survey') {
